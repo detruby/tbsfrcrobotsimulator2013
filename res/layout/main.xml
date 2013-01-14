@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.tbs.widgit.VerticalSeekBar
+        android:id="@+id/tbsleftdrive"
+        android:layout_width="26dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:max="200"
+        android:progress="100"
+        android:progressDrawable="@drawable/progress_vertical"
+        android:thumb="@drawable/seek_thumb" />
+
+    <TextView
+        android:id="@+id/tbsleftdrivelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tbsleftdrive"
+        android:gravity="center"
+        android:text="@string/leftLabel" />
+
+    <com.tbs.widgit.VerticalSeekBar
+        android:id="@+id/tbsrightdrive"
+        android:layout_width="26dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="28dip"
+        android:layout_marginRight="28dip"
+        android:max="200"
+        android:progress="100"
+        android:progressDrawable="@drawable/progress_vertical"
+        android:thumb="@drawable/seek_thumb" />
+
+    <TextView
+        android:id="@+id/tbsrightdrivelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tbsrightdrive"
+        android:gravity="center"
+        android:text="@string/rightLabel" />
+
+    <TextView
+        android:id="@+id/tbsmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tbsrightdrive"
+        android:layout_toRightOf="@+id/tbsleftdrive" />
+
+    <TextView
+        android:id="@+id/tbstimerlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="4dip"
+        android:layout_toLeftOf="@+id/tbstimer"
+        android:text="@string/timerlabel" />
+
+    <Chronometer
+        android:id="@+id/tbstimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tbsrightdrive" />
+
+    <TextView
+        android:id="@+id/tbsconnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbsmsg"
+        android:layout_toLeftOf="@+id/tbsrightdrive"
+        android:layout_toRightOf="@+id/tbsleftdrive"
+        android:gravity="center_horizontal"
+        android:paddingLeft="4dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbsconnected"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tbsrefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonRefresh" />
+
+        <Button
+            android:id="@+id/tbssenddata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSendData"
+            android:visibility="invisible" />
+
+        <ToggleButton
+            android:id="@+id/tbsrobotteleop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="@string/buttonTeleop"
+            android:textOn="@string/buttonTeleop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/tbsbeachExtend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="@string/buttonExtendBeach"
+            android:textOn="@string/buttonExtendBeach" />
+
+        <ToggleButton
+            android:id="@+id/tbsbeachRetract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="@string/buttonRetractBeach"
+            android:textOn="@string/buttonRetractBeach" />
+
+        <ToggleButton
+            android:id="@+id/tbsgathererOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="@string/buttonGathererOn"
+            android:textOn="@string/buttonGathererOn" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tbsshoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/buttonShootBall" />
+
+</RelativeLayout>

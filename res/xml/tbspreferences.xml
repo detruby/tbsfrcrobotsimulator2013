@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:key="TbsNetworktableName"
+        android:summary="The NetworkTable root table name." />
+    <EditTextPreference
+        android:key="TbsControlLeftDrive"
+        android:summary="TThe left virtical drive seek bar NetworkTable name." />
+    <EditTextPreference
+        android:key="TbsControlRightDrive"
+        android:summary="The right virtical drive seek bar NetworkTable name." />
+    <EditTextPreference
+        android:key="TbsControlExtendBeach"
+        android:summary="The extend beach button NetworkTable name." />
+    <EditTextPreference
+        android:key="TbsControlRetractBeach"
+        android:summary="The retract beach button NetworkTable name." />
+    <EditTextPreference
+        android:key="TbsControlGatherer"
+        android:summary="The gatherer button NetworkTable name." />
+    <EditTextPreference
+        android:key="TbsControlShoot"
+        android:summary="The shoot button NetworkTable name." />
+    <EditTextPreference
+        android:key="TbsControlTeleop"
+        android:summary="The teleop button NetworkTable name." />
+
+</PreferenceScreen>

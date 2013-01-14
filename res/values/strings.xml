@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FRC Robot Simulator</string>
+    <string name="menu_help">Help</string>
+    <string name="title_pref">FRC Robot Simulator Settings</string>
+    <string name="title_help">FRC Robot Simulator Help</string>
+    <string name="help_prefix">Version: </string>
+    <string name="buttonSendData">SendData</string>
+    <string name="buttonRefresh">Refresh</string>
+    <string name="timerlabel">Time</string>
+    <string name="buttonTeleop">Robot Teleop</string>
+    <string name="buttonExtendBeach">Extend Beach</string>
+    <string name="buttonRetractBeach">Retract Beach</string>
+    <string name="buttonGathererOn">Gatherer On</string>
+    <string name="buttonShootBall">Shoot Ball</string>
+    <string name="leftLabel">Left</string>
+    <string name="rightLabel">Right</string>
+
+</resources>
